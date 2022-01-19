@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  Health: 90
+  Leben: 90
   positions:
   - {x: 10, y: 0, z: 0}
   - {x: 10, y: 6, z: 0}

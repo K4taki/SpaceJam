@@ -6,7 +6,8 @@ public class EnemyMovement : MonoBehaviour
 {
     
     public float speed;
-    public int Health;
+    public int Leben;
+    
     
     public Vector3[] positions;
     private int Index;
@@ -14,11 +15,12 @@ public class EnemyMovement : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Health -= damage;
-        if(Health<= 0)
+        Leben -= damage;
+        if(Leben<= 0)
         {
             Die();
         }
+        
     }
     void Die()
     {

@@ -13,7 +13,7 @@ public class EnemySpawn : MonoBehaviour
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(EnemyWave());
     }
-    private void spawnMeteor()
+    void spawnMeteor()
     {
         GameObject a = Instantiate(EnemyPrefab) as GameObject;
         a.transform.position = new Vector2(15,0);

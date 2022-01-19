@@ -12,6 +12,7 @@ TagManager:
   - Meteorrr
   - Bullet
   - Android
+  - Highscore
   layers:
   - Default
   - TransparentFX
