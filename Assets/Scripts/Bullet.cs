@@ -42,12 +42,13 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage); 
             GameObject b = Instantiate(Shooteffect) as GameObject;
             b.transform.position = transform.position;
+            
 
 
 
         }
         Destroy(gameObject.GetComponent("Enemy"));
-        Destroy(gameObject.GetComponent("Shooteffect"));
+        Destroy(Shooteffect, 5f);
       
     }
 }

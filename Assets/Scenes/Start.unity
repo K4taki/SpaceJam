@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeteorPrefab: {fileID: 8970653767339471551, guid: cee724501c72ee7439e05777f5c3d5d3, type: 3}
-  respawnTime: 1.5
+  respawnTime: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeteorPrefab: {fileID: 1244384316330180013, guid: a737abec80626a24989842050d2bbdf1, type: 3}
-  respawnTime: 7
+  respawnTime: 9
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,7 +1268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477883890131900005, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
       propertyPath: Upspeed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3477883890131900005, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
       propertyPath: healthbar

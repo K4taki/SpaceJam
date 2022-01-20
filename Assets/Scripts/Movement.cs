@@ -10,9 +10,9 @@ public class Movement : MonoBehaviour
     public float Upspeed;
     public int Health =3;
     public Animator anime;
-    
-    
-    
+
+
+
     public Healthbar healthbar;
     
 
@@ -26,16 +26,7 @@ public class Movement : MonoBehaviour
     {
        
         Health -= damage;
-        anime.SetFloat("Health", (Health));
-
-        
-
-
-        
-        
-            
-        
-
+        anime.SetFloat("Health", Mathf.Abs(Health));
 
         if (Health <= 0)
         {
@@ -66,5 +57,6 @@ public class Movement : MonoBehaviour
         }
         
     }
-   
+    
+
 }

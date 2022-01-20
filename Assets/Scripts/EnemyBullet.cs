@@ -8,8 +8,8 @@ public class EnemyBullet : MonoBehaviour
     Rigidbody2D rb;
     Movement target;
     public int damagi =1;
-     Vector2 moveDirection;  
-    // Start is called before the first frame update
+     Vector2 moveDirection;
+     
     void Start()
     {
         
