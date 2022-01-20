@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
     
     public float speed;
     public int Leben;
-    
-    
+    public Healthbar healthbar;
+    public GameObject explosion;
+
+
     public Vector3[] positions;
     private int Index;
-    
+    void Start()
+    {
+        healthbar.SetMaxHealth(Leben);
+    }
+
 
     public void TakeDamage(int damage)
     {
@@ -20,11 +27,14 @@ public class EnemyMovement : MonoBehaviour
         {
             Die();
         }
-        
+        healthbar.SetHealth(Leben);
+
     }
     void Die()
     {
         Destroy(gameObject);
+        GameObject e = Instantiate(explosion) as GameObject;
+        e.transform.position = transform.position;
     }
     
 

@@ -9,6 +9,9 @@ public class Bullet : MonoBehaviour
     private Vector2 screenBounds;
     public GameObject bulletPrefab;
     public int damage ;
+    public GameObject Shooteffect;
+
+    
     
     
     void Start()
@@ -36,10 +39,16 @@ public class Bullet : MonoBehaviour
         EnemyMovement enemy =hitInfo.GetComponent<EnemyMovement>();
         if (enemy != null)
         {
-            enemy.TakeDamage(damage);
-           
+            enemy.TakeDamage(damage); 
+            GameObject b = Instantiate(Shooteffect) as GameObject;
+            b.transform.position = transform.position;
+
+
+
         }
         Destroy(gameObject.GetComponent("Enemy"));
+        Destroy(gameObject.GetComponent("Shooteffect"));
+      
     }
 }
 

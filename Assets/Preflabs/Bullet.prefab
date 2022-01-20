@@ -138,3 +138,4 @@ MonoBehaviour:
   rb: {fileID: 9083742445193314081}
   bulletPrefab: {fileID: 1979479886865402957}
   damage: 30
+  Shooteffect: {fileID: 2670486817331622217, guid: 432302362b2c7154288922404b4f569d, type: 3}

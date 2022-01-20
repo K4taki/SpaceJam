@@ -13,6 +13,8 @@ TagManager:
   - Bullet
   - Android
   - Highscore
+  - ShootEffect
+  - Shooteffect
   layers:
   - Default
   - TransparentFX
