@@ -8,7 +8,8 @@ public class Movement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float Upspeed;
-    public int Health;
+    public int Health =3;
+    public Animator anime;
     
     
     
@@ -23,16 +24,23 @@ public class Movement : MonoBehaviour
 
     public void Takedamage(int damage)
     {
+       
         Health -= damage;
-      
+        anime.SetFloat("Health", (Health));
+
         
-       
-       
-       
+
+
         
+        
+            
+        
+
+
         if (Health <= 0)
         {
             Die();
+            
         }
         healthbar.SetHealth(Health);
 
