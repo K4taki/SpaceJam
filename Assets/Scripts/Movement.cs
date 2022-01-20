@@ -8,7 +8,10 @@ public class Movement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float Upspeed;
-    public int Health = 3;
+    public int Health;
+    
+    
+    
     public Healthbar healthbar;
     
 
@@ -21,6 +24,12 @@ public class Movement : MonoBehaviour
     public void Takedamage(int damage)
     {
         Health -= damage;
+      
+        
+       
+       
+       
+        
         if (Health <= 0)
         {
             Die();
@@ -49,4 +58,5 @@ public class Movement : MonoBehaviour
         }
         
     }
+   
 }
