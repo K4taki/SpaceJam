@@ -1346,7 +1346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3477883890131900005, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
       propertyPath: Health
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3477883890131900005, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
       propertyPath: Upspeed
