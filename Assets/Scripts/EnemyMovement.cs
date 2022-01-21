@@ -34,7 +34,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void Die()
     {
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
         GameObject e = Instantiate(explosion) as GameObject;
         e.transform.position = transform.position;
     }
