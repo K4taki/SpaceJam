@@ -10,6 +10,9 @@ public class Movement : MonoBehaviour
     public float Upspeed;
     public int Health =3;
     public Animator anime;
+    public Simple flashEffect;
+
+   
 
 
 
@@ -20,17 +23,21 @@ public class Movement : MonoBehaviour
     {
         healthbar.SetMaxHealth(Health);
         
+        flashEffect = GameObject.FindObjectOfType<Simple>();
+
     }
 
     public void Takedamage(int damage)
     {
        
         Health -= damage;
-        anime.SetFloat("Health", Mathf.Abs(Health));
+        flashEffect.Flash();
+        anime.SetTrigger("Hit");
 
         if (Health <= 0)
         {
             Die();
+            anime.SetTrigger("Hit");
             
         }
         healthbar.SetHealth(Health);
@@ -52,6 +59,7 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             rb.AddForce(new Vector2(0, Upspeed));
+           
             
 
         }
