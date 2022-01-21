@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4216419233343099436}
   - component: {fileID: 7776859644137639214}
   - component: {fileID: 6140331682158682683}
+  - component: {fileID: -8470404696307253596}
   - component: {fileID: 3135725666473301291}
   m_Layer: 0
   m_Name: Enemy 1 1
@@ -116,11 +117,26 @@ MonoBehaviour:
   Leben: 90
   healthbar: {fileID: 5142779599610515590}
   explosion: {fileID: 3294318758517192763, guid: a6c07d5152ef6a44faf7611ea2bcdc71, type: 3}
+  flashEffect: {fileID: -8470404696307253596}
   positions:
   - {x: 10, y: 0, z: 0}
   - {x: 10, y: 6, z: 0}
   - {x: 7, y: 0, z: 0}
   - {x: 10, y: -6, z: 0}
+--- !u!114 &-8470404696307253596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2650525273163937690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce08168052ca25f4789ce97aaf06a578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: 6881df9053e16b64e953ea36c28e36a7, type: 2}
+  duration: 0.1
 --- !u!60 &3135725666473301291
 PolygonCollider2D:
   m_ObjectHideFlags: 0

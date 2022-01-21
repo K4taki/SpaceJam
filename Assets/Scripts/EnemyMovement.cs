@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     public int Leben;
     public Healthbar healthbar;
     public GameObject explosion;
+    public Simple flashEffect;
 
 
     public Vector3[] positions;
@@ -23,7 +24,8 @@ public class EnemyMovement : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Leben -= damage;
-        if(Leben<= 0)
+        flashEffect.Flash();
+        if (Leben<= 0)
         {
             Die();
         }
