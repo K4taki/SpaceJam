@@ -11,8 +11,11 @@ public class Movement : MonoBehaviour
     public int Health =3;
     public Animator anime;
     public Simple flashEffect;
+    public Screenshake shake;
+    
 
-   
+
+
 
 
 
@@ -22,8 +25,10 @@ public class Movement : MonoBehaviour
     void Start()
     {
         healthbar.SetMaxHealth(Health);
-        
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Screenshake>();
         flashEffect = GameObject.FindObjectOfType<Simple>();
+       
+
 
     }
 
@@ -33,12 +38,16 @@ public class Movement : MonoBehaviour
         Health -= damage;
         flashEffect.Flash();
         anime.SetTrigger("Hit");
+        shake.CamShake();
+        
 
         if (Health <= 0)
         {
             Die();
             anime.SetTrigger("Hit");
             
+
+
         }
         healthbar.SetHealth(Health);
 
