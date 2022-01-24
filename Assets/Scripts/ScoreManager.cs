@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Highscoresafe()
     {
-        if (currentTime > PlayerPrefs.GetFloat("HIGHSCORE"))
+        if (currentTime > PlayerPrefs.GetFloat("highscore"))
         {
             PlayerPrefs.SetFloat("highscore", finishTime);
         }
