@@ -2,28 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Endscreen : MonoBehaviour
 {
-    public Text highscore;
-
-
-    public void Setup(float scorecount)
+    
+    void Start()
     {
-        highscore.GetComponent<ScoreManager>();
-        gameObject.SetActive(true);
-        highscore.text = scorecount.ToString() + "HIGHSCORE";
+        
     }
-    public void EndScreen()
+
+    
+    public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
-    // Update is called once per frame
-    public void MainMenu()
+    public void Mainmenu()
     {
-        
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }

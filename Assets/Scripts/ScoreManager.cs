@@ -3,23 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreManager: MonoBehaviour
+public class ScoreManager : MonoBehaviour
 {
-    public Text scoreText ;
+    public float currentTime;
+    public float startingTime;
+    public float multiTime= 2;
 
-    public float scoreCount;
-    public float pointsPerSecond;
-    public bool scoreIncreasing;
+   
 
-    void Start()
+    public Text countdownText;
+
+    private void Start()
     {
+        currentTime = startingTime;
+    }
+
+    private void Update()
+    {
+        currentTime +=1 * multiTime * Time.deltaTime;
+        countdownText.text = currentTime.ToString("0");
         
     }
 
-    
-    void Update()
+    public void StopCountdown()
     {
-        scoreText.text = "" + Mathf.Round(scoreCount);
-        scoreCount += pointsPerSecond * Time.deltaTime;
-    }    
+        countdownText.gameObject.SetActive(false);
+    }
 }
