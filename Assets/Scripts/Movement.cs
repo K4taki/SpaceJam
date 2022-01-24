@@ -12,7 +12,8 @@ public class Movement : MonoBehaviour
     public Animator anime;
     public Simple flashEffect;
     public Screenshake shake;
-    public Endscreen Endscreen;
+    
+   
 
     
 
@@ -29,8 +30,8 @@ public class Movement : MonoBehaviour
         healthbar.SetMaxHealth(Health);
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Screenshake>();
         flashEffect = GameObject.FindObjectOfType<Simple>();
-        Endscreen = GetComponent<Endscreen>();
-        
+       
+       
        
 
 
@@ -49,8 +50,8 @@ public class Movement : MonoBehaviour
         {
             Die();
             anime.SetTrigger("Hit");
-
            
+
 
         }
         healthbar.SetHealth(Health);
@@ -61,11 +62,11 @@ public class Movement : MonoBehaviour
         this.gameObject.SetActive(false);
 
         SceneManager.LoadScene(2);
-        
-       
 
 
-        
+
+
+
     }
    
 
