@@ -56,7 +56,7 @@ public class Movement : MonoBehaviour
     {
 
         this.gameObject.SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
 
 
