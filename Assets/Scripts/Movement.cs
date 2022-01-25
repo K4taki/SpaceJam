@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float Upspeed;
+    private float Upspeed = 3.5f ;
     public int Health =3;
     public Animator anime;
     public Simple flashEffect;
@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
             rb.AddForce(new Vector2(0, Upspeed));
            

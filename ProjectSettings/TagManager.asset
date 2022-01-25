@@ -16,6 +16,7 @@ TagManager:
   - ShootEffect
   - Shooteffect
   - ScreenShake
+  - HIGHSCORE
   layers:
   - Default
   - TransparentFX

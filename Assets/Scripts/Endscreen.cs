@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using TMPro;
 
 public class Endscreen : MonoBehaviour
 {
     public Text HStext;
 
-    void Start()
+    public void Start()
     {
-        HStext.text = "H I G H S C O R E :  " +  PlayerPrefs.GetFloat("highscore");
+        HStext.text = PlayerPrefs.GetInt("Highscore").ToString();
     }
 
     
