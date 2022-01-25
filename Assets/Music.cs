@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Music : MonoBehaviour
 {
-    public void Awake()
+    public void  Awake()
     {
-       DontDestroyOnLoad(this); 
+       
+        {
+            DontDestroyOnLoad(this);
+        }
+       
     }
 }

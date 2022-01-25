@@ -72,7 +72,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             rb.AddForce(new Vector2(0, Upspeed));
            
