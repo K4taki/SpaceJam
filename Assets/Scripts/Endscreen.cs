@@ -11,7 +11,7 @@ public class Endscreen : MonoBehaviour
 
     void Start()
     {
-        HStext.text = "HIGHSCORE" + PlayerPrefs.GetFloat("highscore");
+        HStext.text = "H I G H S C O R E :  " +  PlayerPrefs.GetFloat("highscore");
     }
 
     

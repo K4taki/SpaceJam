@@ -9,18 +9,18 @@ public class ScoreManager : MonoBehaviour
     public float currentTime;
     public float startingTime;
     public float multiTime= 2f;
-    public float finishTime;
+   
 
 
 
     public Text Points;
 
-    private void Start()
+    public void Start()
     {
         currentTime = startingTime;
     }
 
-    private void Update()
+    public void Update()
     {
         currentTime +=1 * multiTime * Time.deltaTime;
         Points.text = currentTime.ToString("0");
@@ -28,15 +28,15 @@ public class ScoreManager : MonoBehaviour
     }
     public void Endscore()
     {
-       Points.gameObject.SetActive(false);
+      
     }
 
     public void Highscoresafe()
     {
-        if (currentTime > PlayerPrefs.GetFloat("highscore"))
-        {
-            PlayerPrefs.SetFloat("highscore", finishTime);
-        }
+       
+        
+            PlayerPrefs.SetFloat("highscore", multiTime);
+        
     }
         
     

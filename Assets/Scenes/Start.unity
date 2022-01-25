@@ -158,7 +158,6 @@ MonoBehaviour:
   currentTime: 0
   startingTime: 0
   multiTime: 2
-  finishTime: 0
   Points: {fileID: 4082529394918498392}
 --- !u!114 &110807740
 MonoBehaviour:
@@ -1628,7 +1627,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4082529395494913566, guid: 3e78f7006bdd64543aa8720fa38e495d, type: 3}
       propertyPath: m_Name
-      value: Highscore
+      value: Points
       objectReference: {fileID: 0}
     - target: {fileID: 4082529395494913567, guid: 3e78f7006bdd64543aa8720fa38e495d, type: 3}
       propertyPath: m_Pivot.x
