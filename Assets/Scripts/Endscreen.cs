@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Endscreen : MonoBehaviour
 {
-    
-    void Start()
+    public Text HStext;
+
+    public void Start()
     {
-        
+        HStext.text = PlayerPrefs.GetInt("Highscore").ToString();
     }
 
     
@@ -21,4 +23,6 @@ public class Endscreen : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
+   
+
 }
