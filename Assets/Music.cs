@@ -8,10 +8,7 @@ public class Music : MonoBehaviour
    
     public void  Awake()
     {
-      
-        {
-            DontDestroyOnLoad(this);
-        }
+       
        
     }
     void OnEnable()
@@ -26,7 +23,16 @@ public class Music : MonoBehaviour
 
     public  void OnSceneLoaded(Scene scene,LoadSceneMode mode)
     {
+       
         if (scene.name == "Menu")
+        {
+            DontDestroyOnLoad(this);
+        }
+        else if (scene.name == "Start")
+         {
+            DontDestroyOnLoad(this);
+         }
+        if (scene.name == "EndScreen")
         {
             Destroy(this);
         }
