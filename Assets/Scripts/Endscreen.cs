@@ -10,7 +10,7 @@ public class Endscreen : MonoBehaviour
 
     public void Awake()
     {
-        HStext.text = PlayerPrefs.GetInt("Highscore").ToString();
+        HStext.text ="HIGHSCORE "+ PlayerPrefs.GetInt("Highscore").ToString();
     }
 
     

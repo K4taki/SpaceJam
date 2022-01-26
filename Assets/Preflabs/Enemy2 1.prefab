@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8585304891434640240, guid: c87f607dd403f3a4d9d686bd374ab237, type: 3}
-  fireRate: 3
+  fireRate: 15
 --- !u!114 &6459176523408177984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,11 +213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f350450126ecf84ea902b4569827c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 6
   Leben: 160
   healthbar: {fileID: 7747769899700577238}
   explosion: {fileID: 3294318758517192763, guid: a6c07d5152ef6a44faf7611ea2bcdc71, type: 3}
   flashEffect: {fileID: -8502780048710926622}
+  shake: {fileID: 0}
   positions:
   - {x: 10, y: 0, z: 0}
   - {x: 10, y: -6, z: 0}
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 6881df9053e16b64e953ea36c28e36a7, type: 2}
-  duration: 0.1
+  duration: 0.2
 --- !u!60 &2706443828322730591
 PolygonCollider2D:
   m_ObjectHideFlags: 0

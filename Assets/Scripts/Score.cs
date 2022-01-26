@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     private int time = 0;
-    private int multitime = 2;
+    private int multitime = 5;
     public Text timer;
     public Text HStext;
     void Start()
@@ -37,7 +37,7 @@ public class Score : MonoBehaviour
     public void SetHighscore()
     {
         PlayerPrefs.SetInt("Highscore", time);
-      timer.text =PlayerPrefs.GetInt("Highscore").ToString();
+        timer.text =PlayerPrefs.GetInt("Highscore").ToString();
         Debug.Log("highscore");
 
     }
@@ -46,7 +46,7 @@ public class Score : MonoBehaviour
 
     void IncrimentTime()
     {
-        time += 1*multitime;
+        time += 1 *  multitime;
         timer.text = "" + time;
     }
 }

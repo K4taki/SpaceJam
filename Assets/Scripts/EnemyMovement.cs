@@ -11,12 +11,14 @@ public class EnemyMovement : MonoBehaviour
     public Healthbar healthbar;
     public GameObject explosion;
     public Simple flashEffect;
+    public Screenshake shake;
 
 
     public Vector3[] positions;
     private int Index;
     void Start()
     {
+        shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Screenshake>();
         healthbar.SetMaxHealth(Leben);
     }
 
@@ -34,6 +36,7 @@ public class EnemyMovement : MonoBehaviour
     }
     void Die()
     {
+        shake.CamShake();
         this.gameObject.SetActive(false);
         GameObject e = Instantiate(explosion) as GameObject;
         e.transform.position = transform.position;

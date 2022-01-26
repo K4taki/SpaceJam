@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Music : MonoBehaviour
 {
+   
     public void  Awake()
     {
       
@@ -13,5 +14,24 @@ public class Music : MonoBehaviour
         }
        
     }
-  
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    public  void OnSceneLoaded(Scene scene,LoadSceneMode mode)
+    {
+        if (scene.name == "Menu")
+        {
+            Destroy(this);
+        }
+    }
+   
+
+
 }
