@@ -7,10 +7,11 @@ public class Music : MonoBehaviour
 {
     public void  Awake()
     {
-       
+      
         {
             DontDestroyOnLoad(this);
         }
        
     }
+  
 }

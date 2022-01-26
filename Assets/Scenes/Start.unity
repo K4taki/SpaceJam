@@ -1301,6 +1301,14 @@ PrefabInstance:
       propertyPath: flashEffect
       value: 
       objectReference: {fileID: 1962534651}
+    - target: {fileID: 3477883890131900008, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: db9c93a92d1eec1409a5b1da9dd5a863, type: 2}
+    - target: {fileID: 3477883890131900008, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3477883890131900009, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 7.04

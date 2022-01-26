@@ -12,27 +12,16 @@ public class Movement : MonoBehaviour
     public Animator anime;
     public Simple flashEffect;
     public Screenshake shake;
-    
-   
-
-    
-
-
-
-
-
-
     public Healthbar healthbar;
     
-
     void Start()
     {
         healthbar.SetMaxHealth(Health);
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Screenshake>();
         flashEffect = GameObject.FindObjectOfType<Simple>();
-       
-       
-       
+
+      
+
 
 
     }
@@ -70,11 +59,12 @@ public class Movement : MonoBehaviour
     }
    
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            rb.AddForce(new Vector2(0, Upspeed));
+            rb.AddForce(new Vector2(0, Upspeed)*20);
+            Debug.Log("Input");
            
             
 

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Score : MonoBehaviour
 {
     private int time = 0;
+    private int multitime = 2;
     public Text timer;
     public Text HStext;
     void Start()
@@ -17,10 +19,7 @@ public class Score : MonoBehaviour
         {
             HStext.text = PlayerPrefs.GetInt("Highscore").ToString();
         }
-        else
-        {
-            HStext.text = "No High Scores Yet";
-        }
+       
     }
 
    
@@ -39,7 +38,7 @@ public class Score : MonoBehaviour
     {
         PlayerPrefs.SetInt("Highscore", time);
       timer.text =PlayerPrefs.GetInt("Highscore").ToString();
-        Debug.Log(timer.text);
+        Debug.Log("highscore");
 
     }
 
@@ -47,7 +46,7 @@ public class Score : MonoBehaviour
 
     void IncrimentTime()
     {
-        time += 1;
+        time += 1*multitime;
         timer.text = "" + time;
     }
 }
