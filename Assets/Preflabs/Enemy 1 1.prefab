@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6b41cf0b6a82ec34ca7a19d97518566d, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.94458866, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 8585304891434640240, guid: c87f607dd403f3a4d9d686bd374ab237, type: 3}
-  fireRate: 1
+  fireRate: 10
 --- !u!114 &6140331682158682683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,11 +113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f350450126ecf84ea902b4569827c13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 4
   Leben: 90
   healthbar: {fileID: 5142779599610515590}
   explosion: {fileID: 3294318758517192763, guid: a6c07d5152ef6a44faf7611ea2bcdc71, type: 3}
   flashEffect: {fileID: -8470404696307253596}
+  shake: {fileID: 0}
   positions:
   - {x: 10, y: 0, z: 0}
   - {x: 10, y: 6, z: 0}
@@ -136,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 6881df9053e16b64e953ea36c28e36a7, type: 2}
-  duration: 0.1
+  duration: 0.2
 --- !u!60 &3135725666473301291
 PolygonCollider2D:
   m_ObjectHideFlags: 0

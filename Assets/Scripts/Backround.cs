@@ -12,7 +12,7 @@ public class Backround : MonoBehaviour
 
     void Update()
     {
-        t.Translate(-speed * Time.deltaTime, 0, 0);
+        t.Translate(-speed * Time.deltaTime , 0, 0) ;
         if (t.transform.position.x < -25f)
         {
             t.transform.position = new Vector3(0, 0, 10f);

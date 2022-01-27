@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeteorPrefab: {fileID: 8970653767339471551, guid: cee724501c72ee7439e05777f5c3d5d3, type: 3}
-  respawnTime: 3
+  respawnTime: 2
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -348,7 +348,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.860911
+  orthographic size: 6.7802052
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BigMeteorPrefab: {fileID: 7540294708559689974, guid: bd5ce426b704e584f931f35b0fb00d8b, type: 3}
-  respawnTime: 18.5
+  respawnTime: 12
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeteorPrefab: {fileID: 1244384316330180013, guid: a737abec80626a24989842050d2bbdf1, type: 3}
-  respawnTime: 9
+  respawnTime: 6
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 6881df9053e16b64e953ea36c28e36a7, type: 2}
-  duration: 0.125
+  duration: 0.5
 --- !u!1001 &1967611351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 309674938673253914}
-  speed: 5
+  speed: 7
 --- !u!4 &2132738664
 Transform:
   m_ObjectHideFlags: 0
@@ -1301,6 +1301,14 @@ PrefabInstance:
       propertyPath: flashEffect
       value: 
       objectReference: {fileID: 1962534651}
+    - target: {fileID: 3477883890131900008, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: db9c93a92d1eec1409a5b1da9dd5a863, type: 2}
+    - target: {fileID: 3477883890131900008, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3477883890131900009, guid: d073daf4bc271a64b9080c988dc15796, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 7.04

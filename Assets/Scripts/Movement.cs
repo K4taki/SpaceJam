@@ -12,27 +12,18 @@ public class Movement : MonoBehaviour
     public Animator anime;
     public Simple flashEffect;
     public Screenshake shake;
-    
-   
-
-    
-
-
-
-
-
-
     public Healthbar healthbar;
+    public Score time;
     
-
     void Start()
     {
         healthbar.SetMaxHealth(Health);
         shake = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Screenshake>();
         flashEffect = GameObject.FindObjectOfType<Simple>();
-       
-       
-       
+        time = FindObjectOfType<Score>();
+
+      
+
 
 
     }
@@ -60,21 +51,23 @@ public class Movement : MonoBehaviour
     void Die()
     {
         this.gameObject.SetActive(false);
-
+        time.StopTimer();
         SceneManager.LoadScene(2);
 
-
+        
 
 
 
     }
+
    
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            rb.AddForce(new Vector2(0, Upspeed));
+            rb.AddForce(new Vector2(0, Upspeed)*15);
+            Debug.Log("Input");
            
             
 
